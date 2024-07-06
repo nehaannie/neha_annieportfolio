@@ -1,0 +1,299 @@
+header {
+    background-color:rgba(27, 29, 84, 0.305);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+body {
+    font-family: sans-serif;
+    color: #ffffff; 
+    margin: 0;
+    padding: 0;
+    background-image: url('bake.jpg');
+    background-color:salmon;
+}
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color:salmon; 
+        }
+
+.intro {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 3rem;
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+
+.text {
+    text-align: center;
+}
+
+
+
+.profile-pic img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.airobo img {
+    width: 300px;
+    
+}
+
+.oasis img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.diabetes img {
+    width: 200px;
+    
+}
+
+
+
+
+/*contact */
+.contact-us {
+    text-align: center; 
+    padding: 20px;
+}
+
+form {
+    max-width: 600px; /* Set maximum width for the form */
+    margin: 0 auto; /* Center align the form */
+    text-align: left; /* Align form elements to the left */
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Increase space between form groups */
+}
+
+.form-group label {
+    flex: 1; /* Let the label take 1 part of the available space */
+    text-align: right; /* Right align the label for better alignment */
+    margin-right: 20px; /* Add some margin between label and input */
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 2; /* Let the input field take 2 parts of the available space */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    width: 100%; /* Fill the remaining width */
+}
+
+
+button[type="submit"] {
+    display: block; /* Ensure button takes full width */
+    margin: 0 auto; /* Center align the button */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px; /* Example width for the button */
+}
+
+
+
+/* Projects Section Styling */
+.projects {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff; /* Changed text color to white */
+}
+
+
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-box {
+    background-color: #cccccc5e; /* Grey background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    min-width: 300px; /* Minimum width for a project box */
+    max-width: calc(31% - 20px); /* Ensures three boxes fit nicely in a row with some gap */
+    color: #ffffff; /* Text color */
+    font-family: 'Times New Roman', Times, serif;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out; /* Added transition for smooth hover effect */
+}
+
+.project-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.project-box h3 {
+    color: #ffffff; 
+    margin-bottom: 10px;
+}
+
+.project-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.project-box ul li {
+    margin-bottom: 10px;
+    color: #ffffff; /* Text color */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*skills*/
+
+.skills{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.abtme{
+    line-height: 1.8;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.experience{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.8;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+    gap: 20px; /* Space between boxes */
+    justify-content: center; /* Center horizontally */
+    padding: 20px;
+}
+
+/* Box Styling */
+.box {
+        background-color: #cccccc5e;
+        border: 2px solid #ffffff;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 2px 2px 8px rgb(243, 241, 241);
+        transition: transform 0.2s, box-shadow 0.2s;
+        flex: 1; /* Allow flexibility */
+        max-width: calc(25% - 20px); /* 25% width minus gap */
+        text-align: left;
+        min-width: 180px; /* Minimum width to ensure responsiveness */
+    }
+.box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.box h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em; /* Adjust heading size */
+}
+
+/* List Styling inside Boxes */
+.box ul {
+    list-style-type: disc; /* Use disc for list bullets */
+    padding-left: 20px; /* Space for bullets */
+    margin-top: 10px;
+}
+
+.box li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+#experience
+
+.contofexp {
+       display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.mainofexp {
+    display: flex;
+    flex-direction: column; /* Align boxes vertically */
+    gap: 20px; /* Space between boxes */
+    text-align: center; /* Center text inside boxes */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box-internship {
+    background-color: #ffffff95;
+    border-radius: 10px;
+    box-shadow: salmon;
+    padding: 20px;
+    color:rgb(0, 0, 0);
+    width: 300px; /* Fixed width for the boxes */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effect */
+    
+}
+
+.box-internship:hover {
+    transform: translateY(-10px); /* Lift the box on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* List styles inside the boxes */
+.box-internship ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box-internship ul li {
+    margin: 10px 0;
+}
+
+/* Ensure the main container doesn't shrink more than necessary */
+.mainofexp {
+    max-width: 80%;
+    margin: auto;
+}
+
+@media (min-width: 600px) {
+    .mainofexp {
+        flex-direction: row; /* Align boxes horizontally on larger screens */
+    }
+    .box-internship {
+        width: 45%; /* Responsive width */
+    }
+}
